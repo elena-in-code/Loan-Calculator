@@ -1,17 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/styles.css">
-    <title>Document</title>
-</head>
-<body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+crossorigin="anonymous">
+
+    <title>Loan Calculator</title>
+  </head>
+  <body class="bg-dark">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 mx-auto">
+                  <div class="card card-body text-center mt-5">
+                      <h1 class="heading display-5 pb-3">Loan Calculator</h1>
+                      <form id="loan-form">
+
+                          <div class="form-group">
+                              <div class="input-group">
+                                  <span class="input-group-addon">$</span>
+                                  <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                              </div>
+                          </div>
+
+                          <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">%</span>
+                                    <input type="number" class="form-control" id="interest" placeholder="Interest">
+                                </div>
+                          </div>
+
+                          <div class="form-group">
+                                <input type="number" class="form-control" id="years" placeholder="Years to repay">  
+                          </div>
+
+                          <div class="form-group">
+                              <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+                          </div>
+
+                      </form>
+                      <!-- Loader Here -->
+                      <!--
+                      <div id="loading">
+                          <img src="assets\img\loader.gif" alt="loading image">
+                      </div>
+                      -->
+
+                      <!-- Results Here -->
+                      <div id="results" class="pt-4">
+                          <h5>Results</h5>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Monthly Payment</span>
+                                    <input type="number" class="form-control" id="monthly-payment" disabled>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Total Payment</span>
+                                    <input type="number" class="form-control" id="total-payment" disabled>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Total Interest</span>
+                                    <input type="number" class="form-control" id="total-interest" disabled>
+                                </div>
+                            </div>
+                      </div>
+                      
+
+                  </div>
+              </div>
+          </div>
+      </div>
     
 
-
-
+    
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>
 </body>
 </html>
